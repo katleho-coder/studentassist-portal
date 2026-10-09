@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Assist Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>Student Assist Portal</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#bursaries">Bursaries</a></li>
+        <li><a href="#universities">Universities</a></li>
+        <li><a href="#payment">Payment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage -->
+  <section id="home">
+    <h2>Welcome Students!</h2>
+    <p>Apply to universities and check bursaries easily.</p>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply">
+    <h2>University Application</h2>
+    <form id="applicationForm">
+      <label>Name:</label>
+      <input type="text" required>
+      <label>Email:</label>
+      <input type="email" required>
+      <label>Program Choice:</label>
+      <input type="text" required>
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <section id="apply">
+  <h2>Apply for University</h2>
+  <form id="applyForm">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="program" placeholder="Program of Interest" required>
+    <button type="submit">Send Application</button>
+  </form>
+  <p id="status"></p>
+</section>
+
+  <!-- Bursary Checker -->
+  <section id="bursaries">
+    <h2>Available Bursaries</h2>
+    <input type="text" id="searchBursary" placeholder="Search bursaries...">
+    <ul id="bursaryList"></ul>
+  </section>
+
+  <!-- Universities Showcase -->
+  <!-- Universities Showcase -->
+<section id="universities">
+  <h2>Top Universities</h2>
+  <div class="uni-grid">
+    <div class="uni-card">
+      <a href="https://www.uct.ac.za/" target="_blank">
+        <img src="images/uct.png" alt="University of Cape Town Logo">
+        <h3>University of Cape Town</h3>
+        <p>Ranked #1 in South Africa. Apply now!</p>
+      </a>
+    </div>
+
+    <div class="uni-card">
+      <a href="https://www.wits.ac.za/" target="_blank">
+        <img src="images/wits.png" alt="Wits University Logo">
+        <h3>Wits University</h3>
+        <p>Known for Engineering and Medicine programs.</p>
+      </a>
+    </div>
+
+    <div class="uni-card">
+      <a href="https://www.sun.ac.za/" target="_blank">
+        <img src="images/stellenbosch.png" alt="Stellenbosch University Logo">
+        <h3>Stellenbosch University</h3>
+        <p>Strong focus on Business and Agriculture.</p>
+      </a>
+    </div>
+
+    <div class="uni-card">
+      <a href="https://www.up.ac.za/" target="_blank">
+        <img src="images/up.png" alt="University of Pretoria Logo">
+        <h3>University of Pretoria</h3>
+        <p>Excellence in diverse academic fields.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Featured Universities Carousel -->
+  <section id="uni-carousel">
+    <h2>Featured Universities</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <a href="https://www.uct.ac.za/" target="_blank">University of Cape Town</a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.wits.ac.za/" target="_blank">Wits University</a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.sun.ac.za/" target="_blank">Stellenbosch University</a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.up.ac.za/" target="_blank">University of Pretoria</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment -->
+  <section id="payment">
+    <h2>Secure Payment</h2>
+    <button onclick="makePayment()">Pay Now</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
