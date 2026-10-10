@@ -10,6 +10,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 });
 
 // Bursary Checker with clickable buttons (real links)
+// Bursary Checker with clickable buttons
 const bursaries = [
   { name: "IT Bursary", link: "https://www.sita.co.za/bursaries" },
   { name: "Engineering Bursary", link: "https://www.csir.co.za/bursaries" },
@@ -24,16 +25,17 @@ const bursaryList = document.getElementById("bursaryList");
 function displayBursaries(list) {
   bursaryList.innerHTML = "";
   list.forEach(b => {
-    let li = document.createElement("li");
-    let btn = document.createElement("a");
+    const li = document.createElement("li");
+    const btn = document.createElement("a");
     btn.textContent = b.name;
     btn.href = b.link;
-    btn.target = "_blank"; // open in new tab
+    btn.target = "_blank";
     btn.className = "bursary-btn";
     li.appendChild(btn);
     bursaryList.appendChild(li);
   });
 }
+
 displayBursaries(bursaries);
 
 document.getElementById("searchBursary").addEventListener("input", function() {
@@ -41,6 +43,7 @@ document.getElementById("searchBursary").addEventListener("input", function() {
   const filtered = bursaries.filter(b => b.name.toLowerCase().includes(query));
   displayBursaries(filtered);
 });
+
 
 // Payment Simulation
 function makePayment() {
