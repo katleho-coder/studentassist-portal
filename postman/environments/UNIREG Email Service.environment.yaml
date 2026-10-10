@@ -1,0 +1,13 @@
+name: UNIREG Email Service
+values:
+  - key: base_url
+    value: 'http://localhost:5000'
+    enabled: true
+  - key: EMAIL_USER
+    value: ''
+    enabled: true
+    secret: true
+  - key: EMAIL_PASS
+    value: ''
+    enabled: true
+    secret: true
