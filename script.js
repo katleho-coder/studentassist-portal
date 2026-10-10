@@ -9,43 +9,6 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
   alert("🎉 Application submitted successfully!");
 });
 
-// Bursary Checker with clickable buttons (real links)
-// Bursary Checker with clickable buttons
-const bursaries = [
-  { name: "IT Bursary", link: "https://www.sita.co.za/bursaries" },
-  { name: "Engineering Bursary", link: "https://www.csir.co.za/bursaries" },
-  { name: "Medical Bursary", link: "https://www.health.gov.za/bursary" },
-  { name: "Business Bursary", link: "https://www.sabursaryhub.co.za/commerce-business" },
-  { name: "Law Bursary", link: "https://www.fidfund.co.za/bursaries" },
-  { name: "Education Bursary", link: "https://www.nsfas.org.za" }
-];
-
-const bursaryList = document.getElementById("bursaryList");
-
-function displayBursaries(list) {
-  bursaryList.innerHTML = "";
-  list.forEach(b => {
-    const li = document.createElement("li");
-    const btn = document.createElement("a");
-    btn.textContent = b.name;
-    btn.href = b.link;
-    btn.target = "_blank";
-    btn.className = "bursary-btn";
-    li.appendChild(btn);
-    bursaryList.appendChild(li);
-  });
-}
-
-displayBursaries(bursaries);
-
-document.getElementById("searchBursary").addEventListener("input", function() {
-  const query = this.value.toLowerCase();
-  const filtered = bursaries.filter(b => b.name.toLowerCase().includes(query));
-  displayBursaries(filtered);
-});
-
-
-
 // Payment Simulation
 function makePayment() {
   alert("💳 Redirecting to secure payment gateway...");
