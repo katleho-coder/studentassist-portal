@@ -1,0 +1,5 @@
+# The site is static HTML/CSS/JS at the repo root. Only the public assets are
+# copied into `dist` so that files like `.env` and `server.js` are never published.
+[build]
+  command = "rm -rf dist && mkdir dist && cp -r index.html style.css script.js images dist/"
+  publish = "dist"
