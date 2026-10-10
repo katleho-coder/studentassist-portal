@@ -105,7 +105,7 @@ document.getElementById("applyForm").addEventListener("submit", async (e) => {
   };
 
   try {
-    const response = await fetch("http://studentassist.onrender.com/send-email", {
+    const response = await fetch("https://studentassist.onrender.com/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
