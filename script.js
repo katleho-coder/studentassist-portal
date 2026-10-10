@@ -4,10 +4,7 @@ document.querySelectorAll("section").forEach(sec => {
 });
 
 // Handle Application Form
-document.getElementById("applicationForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("🎉 Application submitted successfully!");
-});
+document.getElementById("status").innerText = "✅ Application submitted successfully!";
 
 // Bursary Checker with clickable buttons (real links)
 const bursaries = [

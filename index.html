@@ -28,18 +28,23 @@
   </section>
 
   <!-- Application Form -->
-  <section id="apply">
-    <h2>University Application</h2>
-    <form id="applicationForm">
-      <label>Name:</label>
-      <input type="text" required>
-      <label>Email:</label>
-      <input type="email" required>
-      <label>Program Choice:</label>
-      <input type="text" required>
-      <button type="submit">Submit Application</button>
-    </form>
-  </section>
+<section id="apply">
+  <h2>University Application</h2>
+  <form id="applicationForm">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Program Choice:</label>
+    <input type="text" name="program" required>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <p id="status"></p>
+</section>
 
   <!-- Bursary Checker -->
   <section id="bursaries">
