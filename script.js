@@ -25,7 +25,7 @@ function displayBursaries(list) {
     let btn = document.createElement("a");
     btn.textContent = b.name;
     btn.href = b.link;
-    btn.target = "_blank"; // open in new tab
+    btn.target = "_blank";
     btn.className = "bursary-btn";
     li.appendChild(btn);
     bursaryList.appendChild(li);
