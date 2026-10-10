@@ -45,6 +45,7 @@ document.getElementById("searchBursary").addEventListener("input", function() {
 });
 
 
+
 // Payment Simulation
 function makePayment() {
   alert("💳 Redirecting to secure payment gateway...");
